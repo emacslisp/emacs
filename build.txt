@@ -1,0 +1,8 @@
+# for mac os x
+
+./configure --with-ns
+make
+
+# for linux
+./configure
+make
