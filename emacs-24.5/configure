@@ -5637,13 +5637,13 @@ if test "$ac_test_CFLAGS" = set; then
   CFLAGS=$ac_save_CFLAGS
 elif test $ac_cv_prog_cc_g = yes; then
   if test "$GCC" = yes; then
-    CFLAGS="-g -O2"
+    CFLAGS="-gdwarf-2 -g3"
   else
-    CFLAGS="-g"
+    CFLAGS="-gdwarf-2 -g3"
   fi
 else
   if test "$GCC" = yes; then
-    CFLAGS="-O2"
+    CFLAGS="-gdwarf-2 -g3"
   else
     CFLAGS=
   fi
@@ -7443,8 +7443,8 @@ if test "$ac_test_CFLAGS" != set; then
   case $CFLAGS in
     '-g')
       emacs_g3_CFLAGS='-g3';;
-    '-g -O2')
-      emacs_g3_CFLAGS='-g3 -O2';;
+    '-gdwarf-2 -g3')
+      emacs_g3_CFLAGS='-gdwarf-2 -g3';;
     *)
       emacs_g3_CFLAGS='';;
   esac
