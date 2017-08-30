@@ -1,0 +1,13 @@
+* task description
+  create emacs using c
+  some of files in bitbucket "emacs.git"
+
+
+* file
+
+* code snippet
+
+* date
+
+* commit
+
